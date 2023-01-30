@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Rubik+Vinyl&display=swap&family=Raleway&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  background: url('./background.svg');
+  background-size: cover;
+}
+
+.header {
+  font-family: 'Rubik Vinyl', cursive;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.keys {
+  display: inline-grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+  margin: 50px 50px;
+}
+
+.key {
+  background: #466e82ac;
+  padding-top: 10px;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  transition: all 0.07s ease;
+}
+
+.playing {
+  color: white;
+  border-color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem white;
+}
+
+.sound {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.footer {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 8px;
+  justify-content: center;
+}
+/* .footer i {
+  color: rgb(206, 31, 31);
+} */
